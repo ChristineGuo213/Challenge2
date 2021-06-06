@@ -14,12 +14,11 @@ from qualifier.filters import loan_to_value
 from qualifier.filters import max_loan_size
 
 
-
-
 def test_save_csv():
-    # @TODO: Your code here!
+    
     # Use Path from pathlib to output the test csv to ./data/output/qualifying_loans.csv
     
+    # defines header variable for new csv file header
     csvoutpath = Path("./Starter_Code/qualifier/tests/qualifying_loans.csv")
     header = [
             # Headers for outputted csv file
@@ -30,6 +29,7 @@ def test_save_csv():
             "Min_Credit_Score",
             "Interest_Rate",
         ],
+    # use assert to verify the if the path actually exists  
     fileio.save_csv(csvoutpath, qualifying_loans="Test", header=header)
     assert csvoutpath.exists()
 

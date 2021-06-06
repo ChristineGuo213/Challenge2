@@ -104,10 +104,16 @@ def find_qualifying_loans(bank_data, credit_score, debt, income, loan, home_valu
     return bank_data_filtered
 
 def save_qualifying_loans(qualifying_loans):
-   """Saves the qualifying loans to a CSV file.
+   """Prompt dialog to ask user if user wants to save the qualifying loans to a CSV file.
    Args:
        qualifying_loans (list of lists): The qualifying bank loans.
    """
+
+    #If there are no qualifying loans, then print the sorry statement and exit the system.
+    #If there are qualifying loans, ask user if they want to save it as a CSV file.
+    #If yes to the above question, then ask for a file path for where the file will be saved.
+    #If no to the above question, then print the alrighty statement and exit the system.
+
    if not qualifying_loans:
        sys.exit("Sorry, there are no qualifying loans!")
    saveFile = questionary.confirm("Would you like to save the qualifying loans?").ask()
