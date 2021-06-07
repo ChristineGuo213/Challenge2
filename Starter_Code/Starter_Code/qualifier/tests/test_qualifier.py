@@ -19,7 +19,7 @@ def test_save_csv():
     # Use Path from pathlib to output the test csv to ./data/output/qualifying_loans.csv
     
     # defines header variable for new csv file header
-    csvoutpath = Path("./Starter_Code/qualifier/tests/qualifying_loans.csv")
+    csvoutpath = Path("./Starter_Code/Starter_Code/qualifier/tests/qualifying_loans.csv")
     header = [
             # Headers for outputted csv file
             "Lender",
@@ -29,7 +29,7 @@ def test_save_csv():
             "Min_Credit_Score",
             "Interest_Rate",
         ],
-    # use assert to verify the if the path actually exists  
+    # use assert to verify if the path actually exists  
     fileio.save_csv(csvoutpath, qualifying_loans="Test", header=header)
     assert csvoutpath.exists()
 
@@ -42,7 +42,7 @@ def test_calculate_loan_to_value_ratio():
     assert calculators.calculate_loan_to_value_ratio(210000, 250000) == 0.84
 
 def test_filters():
-    bank_data = fileio.load_csv(Path('./data/daily_rate_sheet.csv'))
+    bank_data = fileio.load_csv(Path('./Starter_Code/Starter_Code/qualifier/data/daily_rate_sheet.csv'))
     current_credit_score = 750
     debt = 1500
     income = 4000
@@ -53,5 +53,12 @@ def test_filters():
 
     loan_to_value_ratio = 0.84
 
-    # @TODO: Test the new save_csv code!
+
     # YOUR CODE HERE!
+
+    bank_data_filtered = credit_score.filter_credit_score(current_credit_score, bank_data)
+    bank_data_filtered = debt_to_income.filter_debt_to_income(monthly_debt_ratio, bank_data_filtered)
+    bank_data_filtered = loan_to_value.filter_loan_to_value(loan_to_value_ratio, bank_data_filtered)
+    bank_data_filtered = max_loan_size.filter_max_loan_size(loan, bank_data_filtered)
+
+    assert len(bank_data_filtered) == 6

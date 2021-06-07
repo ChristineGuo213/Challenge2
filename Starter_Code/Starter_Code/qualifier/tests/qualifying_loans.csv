@@ -1,4 +1,4 @@
-"['lender', 'max_loan_amount', 'max_loan_to_value', 'max_debt_to_income', 'min_credit_score', 'interest_rate']"
+"['Lender', 'Max_Loan_Amount', 'Max_LTV', 'Max_DTI', 'Min_Credit_Score', 'Interest_Rate']"
 T
 e
 s
