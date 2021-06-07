@@ -54,11 +54,12 @@ def test_filters():
     loan_to_value_ratio = 0.84
 
 
-    # YOUR CODE HERE!
+    # Using the variable values above and pass them in the functions to further filter by each category. 
 
     bank_data_filtered = credit_score.filter_credit_score(current_credit_score, bank_data)
     bank_data_filtered = debt_to_income.filter_debt_to_income(monthly_debt_ratio, bank_data_filtered)
     bank_data_filtered = loan_to_value.filter_loan_to_value(loan_to_value_ratio, bank_data_filtered)
     bank_data_filtered = max_loan_size.filter_max_loan_size(loan, bank_data_filtered)
 
+    # If the number of qualifying lenders matchs the number below then the filers are all functioning properly. 
     assert len(bank_data_filtered) == 6
