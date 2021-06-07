@@ -32,16 +32,9 @@ The following dependencies are required to be installed before running the appli
   pip install mkdocs
 ```
 
-
-## Examples
-
-This section should include screenshots, code blocks, or animations showing how your project works.
-
 ---
 
 ## Usage
-
-This section should include screenshots, code blocks, or animations explaining how to use your project.
 
 To use the loan qualifier application simply clone the repository and run the **app.py** with:
 
@@ -49,10 +42,13 @@ To use the loan qualifier application simply clone the repository and run the **
 python app.py
 ```
 
-Upon launching the loan qualifier application you will be greeted with the following prompts.
+Upon launching the loan qualifier application you will be greeted with the following prompts. Attaching three screenshots for three different scenarios.
 
-![Loan Qualifier Prompts](Images/loan_qalifier.png)
+![Loan Qualifier Prompts If No Qualifying Loans](images/no_result.png)
 
+![Loan Qualifier Prompts If Saving Results In A CSV File](images/not_saving_csv.png)
+
+![Loan Qualifier Prompts If Not Saving Results In A CSV File](images/saving_csv.png)
 
 ---
 
@@ -63,10 +59,10 @@ Upon launching the loan qualifier application you will be greeted with the follo
 
 In this section, list all the people who contribute to this project; since you may want to be reached by recruiters or potential collaborators, include your contact e-mail, and optionally your LinkedIn or Twitter profile.
 
-Brought to you by Triology and Christine Guo
+Brought to you by Triology and Christine Guo (www.linkedin.com/in/christine-guo)
 
 ---
 
 ## License
 
-When you share a project on a repository, especially a public one, it's important to choose the right license to specify others what they can and can not do with your source code and files. Use this section to include the licence you want to use.
+NoNe
