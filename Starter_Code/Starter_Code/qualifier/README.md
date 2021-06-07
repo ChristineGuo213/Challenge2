@@ -40,11 +40,11 @@ python app.py
 
 Upon launching the loan qualifier application you will be greeted with the following prompts. Attaching three screenshots for three different scenarios.
 
-![Loan Qualifier Prompts If No Qualifying Loans](C:\Users\guoyu\OneDrive\Desktop\Christine\Challenge2\Challenge2\images\no_result.PNG)
+![Loan Qualifier Prompts If No Qualifying Loans](images/no_result.PNG)
 
-![Loan Qualifier Prompts If Saving Results In A CSV File](C:\Users\guoyu\OneDrive\Desktop\Christine\Challenge2\Challenge2\images\not_saving_csv.PNG)
+![Loan Qualifier Prompts If Saving Results In A CSV File](images/saving_csv.PNG)
 
-![Loan Qualifier Prompts If Not Saving Results In A CSV File](C:\Users\guoyu\OneDrive\Desktop\Christine\Challenge2\Challenge2\images\saving_csv.PNG)
+![Loan Qualifier Prompts If Not Saving Results In A CSV File](images/not_saving_csv.PNG)
 
 ---
 
